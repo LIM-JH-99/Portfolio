@@ -1,0 +1,339 @@
+@charset "utf-8";
+ /* 바보야 나 누구게 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pretendard';
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* ---------------------------------- */
+
+.top {
+    width: 100%;
+    height: 100vh;
+    background-color: #121212;
+}
+.top video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------- */
+.about-me {
+    width: 100%;
+    height: 100vh;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-me .wrap {
+    width: 80%;
+    height: 90vh;
+    background-color: rgba(255, 255, 255, 0.7);
+    /* margin: 0 auto; */
+    padding: 5rem;
+    border-radius: 50px;
+}
+.about-me .about-header {
+    width: 100%;
+    height: 20%;
+    border-bottom: 3px double #121212;
+    margin-bottom: 20px;
+}
+
+.about-me .about-header h2 {
+    font-size: 3rem;
+    color: #121212;
+}
+
+.about-me .wrap .about-main {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+    color: #121212;
+    /* font-size: 1rem; */
+    /* border-top: 3px solid #121212; */
+}
+.about-me .wrap .about-main h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.about-me .wrap .about-main .profile-img {
+    width: 25%;
+    height: 100%;
+    background: url('/images/앉아서\ 카메라.png')no-repeat center/contain ;
+    /* margin: 0 80px; */
+}
+.about-me .wrap .about-main .about-left {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.about-me .wrap .about-main .about-left .tool_img {
+    display: flex;
+    width: 100%
+}
+.about-me .wrap .about-main .about-left .tool_img img {
+    width: 11%;
+    margin-right: 20px;
+}
+
+.about-me .wrap .about-main .about-right {
+    width: 30%;
+    height: 100%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around; */
+}
+
+.about-me .wrap .about-footer {
+    width: 100%;
+    height: 20%;
+    border-top: 3px double #121212;
+    margin-top: 20px;
+    color: #121212;
+    padding: 0 20px;
+
+}
+
+
+
+/* ----------------------------------- */
+/* ----------------------------------- */
+
+
+.main-project {
+    width: 100%;
+    height: 100vh;
+    background-color: #121212;
+}
+.main-project .mp-wrap {
+    width: 100%;
+    height: 100%;
+}
+.main-project .mp-wrap h3 {
+    font-size: 3rem;
+    padding: 40px;
+    color: #f5f5f5;
+}
+.main-project .mp-wrap .mp-item {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #f5f5f5;
+}
+.main-project .mp-wrap .mp-item .mp-video {
+    width: 70%;
+    height: 90%;
+    /* flex: ; */
+}
+.main-project .mp-wrap .mp-item .mp-video iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.main-project .mp-wrap .mp-item .mp-text {
+    width: 20%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main-project .mp-wrap .mp-item .mp-text h4 {
+    font-size: 1.5rem;
+}
+.main-project .mp-wrap .mp-item .mp-text p {
+    padding-top: 20px;
+    padding-left: 2px;
+}
+
+/* -------------------------------------------------------- */
+
+
+.design {
+    background-color: #121212;
+    padding: 3rem;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.design h3 {
+    font-size: 3rem;
+    color: #f5f5f5;
+    /* padding-top: 50px; */
+    /* margin-bottom: 250px; */
+    margin: 50px 0 180px 0;
+}
+
+/* .design .swiper {
+    position: absolute;
+} */
+.design .swiper {
+    width: 100%;
+    height: 600px;
+}
+.design .swiper .swiper-wrapper {
+    display: flex;
+    transition-timing-function: linear;
+    /* margin: 20px; */
+    /* justify-content: center;
+    align-items: center; */
+    
+}
+/* .design .swiper .swiper-wrapper .swiper-slide {
+    width: 25rem;
+    height: 30rem;
+    border-radius: 20px;
+} */
+.design .swiper .swiper-wrapper .swiper-slide {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.design .swiper .swiper-wrapper .swiper-slide img{
+    width: 100%;
+    height: 100%;
+    /* contain: content; */
+    /* background-color: gray; */
+    cursor: pointer;
+    object-fit: cover;
+    /* margin: 20px; */
+}
+
+.design .popup {
+    position: absolute;
+    width: 600px;
+    height: 800px;
+    z-index: 9;
+    opacity: 0;
+    visibility: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    background-color: #f5f5f5;
+    border-radius: 20px;
+}
+.design .popup.on {
+    opacity: 1;
+    visibility: visible;
+}
+/* .design .popup {
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+} */
+
+
+.design .popup .inner {
+    width: 100%;
+    height: 100%;
+}
+
+.design .popup .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.design .popup button {
+    /* width: 100%; */
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin-left: 32rem;
+    background-color: #f5f5f5;
+}
+
+
+.design .popup .inner img {
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+    /* padding-top: 20px; */
+    
+    /* object-fit: contain; */
+    /* margin: 0 auto; */
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------- */
+
+footer {
+    background-color: #121212;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 5rem 0 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

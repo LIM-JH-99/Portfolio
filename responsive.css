@@ -1,0 +1,184 @@
+/* ---------------------------------------------------- */
+@media screen and (max-width: 1440px) {
+    .design .swiper {
+        height: 500px;
+    }
+    .design h3 {
+        margin-bottom: 100px;
+    }
+    .design .popup {
+        width: 500px;
+        height: 700px;
+    }
+    .design .popup .inner {
+        width: 100%;
+        height: 100%;
+    }
+    .design .popup button {
+        margin-left: 26rem;
+    }
+    .design .popup .inner button img {
+        width: 25px;
+        height: 25px;
+    }
+}
+@media screen and (max-width: 1048px) {
+    .main-project .mp-wrap .mp-item .mp-video {
+        height: 80%;
+    }
+    .design .swiper {
+        height: 400px;
+    } 
+}
+@media screen and (max-width: 768px) {
+    .top {
+        height: 50vh;
+    }
+    
+    .about-me {
+        height: auto;
+        padding: 2rem 0;
+    }
+    .about-me .wrap {
+        height: auto;
+        padding: 1rem;
+    }
+    .about-me .wrap .about-header h2{
+        padding: 30px;
+        text-align: center;
+        /* margin: 0 auto; */
+    }
+    .about-me .wrap .about-main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .about-me .wrap .about-main .profile-img {
+        width: 80%;
+        height: 250px;
+        margin-bottom: 1.5rem;
+    }
+    .about-me .wrap .about-main .about-left,
+    .about-me .wrap .about-main .about-right {
+        width: 90%;
+        margin: 1rem 0;
+    }
+    .about-me .wrap .about-main .about-left h3 {
+        margin-top: 1rem;
+    }
+    .about-me .wrap .about-main .about-left .tool .tool_img {
+        width: 25rem;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    
+    .main-project {
+        height: auto;
+        padding: 2rem 0;
+    }
+    .main-project .mp-wrap .mp-item {
+        flex-direction: column;
+        height: auto;
+    }
+    .main-project .mp-wrap .mp-item .mp-video {
+        width: 80%;
+        height: 400px;
+    }
+    .main-project .mp-wrap .mp-item .mp-text {
+        width: 100%;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .main-project .mp-wrap .mp-item .mp-text div:nth-child(2) {
+        margin-top: 40px;
+    }
+  .main-project .mp-wrap .mp-item .mp-text div:nth-child(3) {
+      margin-top: 40px;
+    }
+    
+    .design {
+        height: 80vh;
+        padding: 1.5rem;
+        /* height: auto; */
+        /* height: 100vh; */
+        /* width: 100%; */
+    }
+    .design h3 {
+        margin: 20px 0 50px;
+        font-size: 3rem;
+        margin-bottom: 10rem;
+    }
+    .design .swiper .swiper-wrapper .swiper-slide img {
+        /* width: 100%;
+        height: 100%; */
+        /* height: auto; */
+        object-fit: cover;
+    }
+    .design .popup {
+        width: 420px;
+        height: 600px;
+        /* max-height: 80%; */
+        /* object-fit: cover; */
+    }
+    .design .popup .inner img {
+        width: 95%;
+        height: 95%;
+    }
+    .design .popup button {
+        margin-left: 22rem;
+        width: 25px;
+        height: 25px;
+    }
+}
+@media screen and (max-width: 425px) {
+    html {
+        font-size: 13px;
+    }
+    .about-me .wrap {
+        width: 90%;
+    }
+    .about-me .wrap .about-header h2 {
+        padding: 10px;
+    }
+    .about-me .wrap .about-main .about-left h3 {
+        margin-top: 0;
+    }
+    .about-left > * {
+        margin-bottom: 20px;
+     }
+    .about-me .wrap .about-main .about-left .tool .tool_img {
+        width: 80%;
+        flex-wrap: wrap;
+    }
+    .about-me .wrap .about-main .about-left .tool_img img {
+        width: 20%;
+    }
+    .about-me .wrap {
+        border-radius: 20px;
+    }
+    .about-me .wrap .about-footer {
+        text-align: center;
+        padding-top: 10px;
+    }
+    .main-project .mp-wrap .mp-item .mp-video {
+        height: 200px;
+    }
+    .design .swiper {
+        height: 300px;
+    }
+    footer {
+        padding-top: 1rem;
+    }
+    .design .popup button {
+        margin-left: 21rem;
+    }
+    .design .popup {
+        width: 340px;
+        height: 480px;
+    }
+    .design .popup .inner button img {
+        width: 20px;
+        height: 20px;
+    }
+}
